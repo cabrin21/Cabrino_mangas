@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Anime</title>
+<style>
+body {background:#0d0d0d;color:white;font-family:Arial;margin:0;}
+header {background:#141414;padding:15px;text-align:center;color:orange;}
+.episodes {padding:20px;}
+button {display:block;width:100%;margin:10px 0;padding:12px;background:#1c1c1c;color:white;border:none;cursor:pointer;border-radius:5px;}
+button:hover {background:orange;color:black;}
+iframe {width:100%;height:250px;margin-top:15px;}
+</style>
+</head>
+<body>
+<header id="title">Anime</header>
+<div class="episodes" id="episodes"></div>
+<div id="player"></div>
+<script>
+const params = new URLSearchParams(window.location.search);
+const anime = params.get("anime");
+
+const data = {
+  naruto: [
+    "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  ],
+  aot: [
+    "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  ],
+  demon: [
+    "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  ]
+};
+
+document.getElementById("title").innerText = anime ? anime.toUpperCase() : "Anime";
+
+const container = document.getElementById("episodes");
+
+if (anime && data[anime]) {
+  data[anime].forEach((url, index) => {
+    const btn = document.createElement("button");
+    btn.innerText = "Episode " + (index + 1);
+    btn.onclick = () => {
+      document.getElementById("player").innerHTML =
+        `<iframe src="${url}" frameborder="0" allowfullscreen></iframe>`;
+    };
+    container.appendChild(btn);
+  });
+} else {
+  container.innerHTML = "<p>Aucun anime trouvé.</p>";
+}
+</script>
+</body>
+</html>
