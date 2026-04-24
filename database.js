@@ -7,12 +7,11 @@ const ANIME_DB = {
     id:"20",
     seasons:{
       "Saison 1":[
-        {title:"Episode 1 - Naruto Uzumaki!", video:null},
-        {title:"Episode 2 - My Name is Konohamaru!", video:null},
-        {title:"Episode 3 - Sasuke and Sakura", video:null},
-        {title:"Episode 4 - Survival Test", video:null},
-        {title:"Episode 5 - Kakashi Decision", video:null},
-        {title:"Episode 6 - Land of Waves", video:null}
+        {title:"Episode 1 - Naruto Uzumaki!", video:"https://youtu.be/WCtuv7SckVU?si=PZHLddfkXycIQwN9"},
+        {title:"Episode 2 - My Name is Konohamaru!", video:"https://youtu.be/RXDOfsskNao?si=sEIgtjcBrgI9_99R"},
+        {title:"Episode 3 - Sasuke and Sakura", video:"https://youtu.be/BGydSLlXNRs?si=yGYYVsaixGo0BoTn"},
+        {title:"Episode 4 - Survival Test", video:"https://youtu.be/3V_mHoYKkHc?si=tFxGNGKXIFrtv8Ba"},
+        {title:"Episode 5 - Kakashi Decision", video:"https://youtu.be/R7nKjnky_-s?si=zjwbLpwfvMEfbmb9"}
       ]
     }
   },
@@ -24,17 +23,123 @@ const ANIME_DB = {
     id:"16498",
     seasons:{
       "Saison 1":[
-        {title:"Episode 1 - To You, 2000 Years Later", video:null},
-        {title:"Episode 2 - That Day", video:null},
-        {title:"Episode 3 - A Dim Light Amid Despair", video:null},
-        {title:"Episode 4 - Night of the Ceremony", video:null},
-        {title:"Episode 5 - First Battle", video:null},
-        {title:"Episode 6 - The World She Saw", video:null}
+        {title:"Episode 1 - To You, 2000 Years Later", video:"https://www.youtube.com/embed/MGRm4IzK1SQ"},
+        {title:"Episode 2 - That Day", video:"https://www.youtube.com/embed/LV-nazLVmgo"},
+        {title:"Episode 3 - A Dim Light Amid Despair", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"},
+        {title:"Episode 4 - Night of the Ceremony", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"}
       ]
     }
   },
 
   // =========================
+  // 🔥 JUJUTSU KAISEN
+  // =========================
+  jujutsu_kaisen:{
+    id:"40748",
+    seasons:{
+      "Saison 1":[
+        {title:"Episode 1 - Ryomen Sukuna", video:"https://www.youtube.com/embed/pkKu9hLT-t8"},
+        {title:"Episode 2 - For Myself", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"},
+        {title:"Episode 3 - Girl of Steel", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"}
+      ]
+    }
+  },
+
+  // =========================
+  // 🔥 DEATH NOTE
+  // =========================
+  death_note:{
+    id:"1535",
+    seasons:{
+      "Saison 1":[
+        {title:"Episode 1 - Rebirth", video:"https://www.youtube.com/embed/NlJZ-YgAt-c"},
+        {title:"Episode 2 - Confrontation", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"},
+        {title:"Episode 3 - Dealings", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"}
+      ]
+    }
+  },
+
+  // =========================
+  // 🔥 SOLO LEVELING
+  // =========================
+  solo_leveling:{
+    id:"52299",
+    seasons:{
+      "Saison 1":[
+        {title:"Episode 1 - I'm Used to It", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"},
+        {title:"Episode 2 - If I Had One More Chance", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"}
+      ]
+    }
+  },
+
+  // =========================
+  // 🔥 WIND BREAKER
+  // =========================
+  wind_breaker:{
+    id:"54900",
+    seasons:{
+      "Saison 1":[
+        {title:"Episode 1 - Arrival at Furin High", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"},
+        {title:"Episode 2 - First Fight", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"}
+      ]
+    }
+  },
+
+  // =========================
+  // 🔥 DEMON SLAYER
+  // =========================
+  demon_slayer:{
+    id:"38000",
+    seasons:{
+      "Saison 1":[
+        {title:"Episode 1 - Cruelty", video:"https://www.youtube.com/embed/VQGCKyvzIM4"},
+        {title:"Episode 2 - Trainer Sakonji", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"},
+        {title:"Episode 3 - Sabito and Makomo", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"}
+      ]
+    }
+  },
+
+  // =========================
+  // 🔥 ONE PIECE
+  // =========================
+  one_piece:{
+    id:"21",
+    seasons:{
+      "Saison 1":[
+        {title:"Episode 1 - I'm Luffy!", video:"https://www.youtube.com/embed/S8_YwFLCh4U"},
+        {title:"Episode 2 - Enter Zoro", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"},
+        {title:"Episode 3 - Morgan vs Luffy", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"}
+      ]
+    }
+  },
+
+  // =========================
+  // 🔥 BLEACH
+  // =========================
+  bleach:{
+    id:"269",
+    seasons:{
+      "Saison 1":[
+        {title:"Episode 1 - Death & Strawberry", video:"https://www.youtube.com/embed/ofvaakyqiF4"},
+        {title:"Episode 2 - Shinigami Work", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"}
+      ]
+    }
+  },
+
+  // =========================
+  // 🔥 TOKYO GHOUL
+  // =========================
+  tokyo_ghoul:{
+    id:"22319",
+    seasons:{
+      "Saison 1":[
+        {title:"Episode 1 - Tragedy", video:"https://www.youtube.com/embed/vGuQeQsoRgU"},
+        {title:"Episode 2 - Incubation", video:"https://www.youtube.com/embed/dQw4w9WgXcQ"}
+      ]
+    }
+  }
+
+};  // =========================
   // 🔥 JUJUTSU KAISEN
   // =========================
   jujutsu_kaisen:{
